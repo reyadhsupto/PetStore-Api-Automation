@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+    <listener
+      class-name="reports.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="User Create Test">
+    <classes>
+	<!--class name="api.test.BaseClass"/-->
+      <class name="api.test.test_CreateUser"/>
+  </classes>
+  </test>
+  <test thread-count="5" name="Get User Test">
+    <classes>
+      <class name="api.test.test_GetUser"/>
+  </classes>
+  </test> 
+  <test thread-count="5" name="User Login Test">
+    <classes>
+      <class name="api.test.test_LoginUser"/>
+   </classes>
+  </test> 
+  <test thread-count="5" name="User Logout Test">
+    <classes>
+      <class name="api.test.test_LogoutUser"/>
+  </classes>
+  </test> 
+  <test thread-count="5" name="User Update Test">
+    <classes>
+      <class name="api.test.test_UpdateUser"/>
+  </classes>
+  </test> 
+  <test thread-count="5" name="User Delete Test">
+    <classes>
+      <class name="api.test.test_DeleteUser"/>
+    </classes>
+  </test> 
+  <!--test thread-count="5" name="Data Driven User module Test">
+    <classes>
+      <class name="api.tests.DDtests.test_DDTCreateUser"/>
+      <class name="api.tests.DDtests.test_DDTDeleteUser"/>
+    </classes>
+  </test --> 
+    
+</suite> <!-- Suite -->
